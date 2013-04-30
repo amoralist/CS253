@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="/static/main.css" />
+
+  <title>Udacity CS253 Blog</title>
+</head>
+
+<body>
+  <a href="/blog" class="main-title">
+    Udacity CS253 Blog Project
+  </a>
+
+  <div id="content">
+  {% block content %}
+  {% endblock %}
+  </div>
+
+	<div class= "age">
+  		Queried {{time_since_qry}} seconds ago
+	</div>
+
+</body>
+
+</html>
+
